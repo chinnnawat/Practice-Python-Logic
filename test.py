@@ -1,7 +1,7 @@
-print(" *** Filter only ODD number ***")
-list = input("Enter some numbers: ").split()
-print(list)
-for n in list :
-    n = int(n)
-    if n%2 > 0:
-        print(n,end=' ')
+height = int(input("Enter height: "))
+first_char = ord('z')
+for i in range(height):
+    space = " " * (height - i - 1)
+    chars = [chr(first_char) for j in range(i * 2 + 1)]
+    first_char = first_char-1
+    print(space + "".join(chars))
